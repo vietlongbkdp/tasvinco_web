@@ -5,6 +5,7 @@ import { HomePage } from 'modules/HomePage/Loadable';
 export const RoutesName = {
   LOGIN: '/login',
   HOME: '/',
+  ABOUT: '/about',
 };
 
 export const PUBLIC_ROUTES = [
