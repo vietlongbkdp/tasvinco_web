@@ -6,6 +6,8 @@ export const RoutesName = {
   LOGIN: '/login',
   HOME: '/',
   ABOUT: '/about',
+  CONTACT: '/contact',
+  VINH: '/VINH',
 };
 
 export const PUBLIC_ROUTES = [
