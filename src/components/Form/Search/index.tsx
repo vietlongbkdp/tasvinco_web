@@ -102,14 +102,7 @@ export const Search: React.FC<FormInputProps & InputProps> = ({
             onBlur={onBlur}
             value={value}
             type="text"
-            suffix={
-              <SearchOutlined
-                className="search"
-                onClick={handleSubmit(onSubmit)}
-                onPointerEnterCapture={undefined}
-                onPointerLeaveCapture={undefined}
-              />
-            }
+            suffix={<SearchOutlined className="search" onClick={handleSubmit(onSubmit)} />}
             onPressEnter={onKeyPress}
             {...rest}
           />

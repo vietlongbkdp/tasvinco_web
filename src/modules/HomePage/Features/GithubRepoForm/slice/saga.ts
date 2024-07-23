@@ -14,7 +14,7 @@ export function* getRepos() {
   yield delay(500);
   // Select username from store
   const username: string = yield select(selectUsername);
-  console.log('======> selectUsername', username);
+  // console.log('======> selectUsername', username);
   if (username.length === 0) {
     yield put(actions.repoError(RepoErrorType.USERNAME_EMPTY));
     return;

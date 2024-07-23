@@ -10,3 +10,5 @@ export * from './Upload';
 export * from './Modal';
 export * from './Form';
 export * from './Button';
+export * from './header';
+export * from './footer';
