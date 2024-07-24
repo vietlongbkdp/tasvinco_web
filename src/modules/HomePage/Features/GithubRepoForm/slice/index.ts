@@ -3,7 +3,6 @@ import { Repo } from 'types/Repo';
 import { createSlice } from 'utils/@reduxjs/toolkit';
 import { useInjectReducer, useInjectSaga } from 'utils/redux-injectors';
 import { useSelector, useDispatch } from 'react-redux';
-import { LOCATION_CHANGE, LocationChangePayload, locationChange } from 'utils/location';
 
 import { UserModel } from 'models';
 import { githubRepoFormSaga } from './saga';
@@ -52,7 +51,7 @@ const slice = createSlice({
     },
   },
   // handle data when location change router
-  extraReducers: (builder) => {
+  extraReducers: () => {
     // builder.addCase(LOCATION_CHANGE, (state, action) => {
     //   console.log('=====>state ', state);
     //   console.log('====> action', action);
