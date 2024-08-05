@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tooltip } from 'antd';
+import { LogoWhite } from 'assets';
 import {
   Footer,
   FooterWidgets,
@@ -22,8 +23,10 @@ import {
   IconEmailSearch,
   Button,
   SendEmail,
+  FooterBorderBoottom,
+  ContentFooterEnd,
 } from './styled';
-import logoWhite from '../../assets/images/logoWhite.png';
+
 import { MenuFooterData, SupportFooterData } from './constant';
 import { MenuFooter } from './feature/menu-footer';
 import { SupportFooter } from './feature/support-footer';
@@ -33,7 +36,7 @@ export const FooterPage: React.FC = () => {
     <Footer>
       <FooterWidgets>
         <FooterColums>
-          <Logo src={logoWhite} alt="Logo" />
+          <Logo src={LogoWhite} alt="Logo" />
           <ContentTitle>Công Ty TNHH Cơ Khí TASVINCO</ContentTitle>
           <Icons>
             <IconAddress />
@@ -89,6 +92,9 @@ export const FooterPage: React.FC = () => {
           </Search>
         </WidgetTitle>
       </FooterWidgets>
+      <FooterBorderBoottom>
+        <ContentFooterEnd>© 2023 Công ty TNHH Cơ khí TASVINCO</ContentFooterEnd>
+      </FooterBorderBoottom>
     </Footer>
   );
 };

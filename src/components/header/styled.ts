@@ -1,12 +1,14 @@
-import { Cart, DownArrow, Email, Menu, PhoneCall } from 'assets/icon';
+import { Cart, DownArrow, Email, MenuIcon, PhoneCall } from 'assets/icon';
 import styled from 'styled-components';
+import { Menu } from 'antd';
 
 export const TopBar = styled.div`
   background-color: #e7e7e7;
 `;
 
 export const DivTopBar = styled.div`
-  margin-right: 314px;
+  width: 80%;
+  margin-inline: auto;
   display: flex;
   justify-content: end;
 `;
@@ -40,7 +42,8 @@ export const ImageStyle = styled.img`
 
 export const MastHead = styled.div`
   height: 115px;
-  margin: 27px 314px 27px 314px;
+  width: 80%;
+  margin-inline: auto;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -71,6 +74,7 @@ export const IconPhoneCall = styled(PhoneCall)`
   cursor: pointer;
   & path {
     fill: #d72e24;
+    stroke: none;
   }
 `;
 
@@ -79,7 +83,7 @@ export const IconDownArrow = styled(DownArrow)`
   height: 15px;
 `;
 
-export const IconMenu = styled(Menu)`
+export const IconMenu = styled(MenuIcon)`
   width: 30px;
   height: 30px;
 
@@ -116,7 +120,9 @@ export const HeaderBottom = styled.div`
   justify-content: space-between;
   gap: 34px;
   height: 55px;
-  margin: 27px 314px 27px 314px;
+  width: 80%;
+  margin-inline: auto;
+  margin-block: auto;
 `;
 
 export const IconDownArrowWhite = styled(DownArrow)`
@@ -137,4 +143,27 @@ export const HeaderVerticalMenuTitle = styled.div`
   align-items: center;
   cursor: pointer;
   gap: 10px;
+`;
+
+export const MenuStyle = styled(Menu)`
+  background-color: #d72e24 !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  padding: 8px 0 !important;
+  margin-top: -4px !important;
+
+  .ant-dropdown-menu-item {
+    background-color: #d72e24 !important;
+    color: #fff !important;
+  }
+  .ant-dropdown-menu-submenu-expand-icon {
+    & path {
+      fill: white;
+    }
+  }
+
+  .ant-dropdown-menu-title-content {
+    color: #fff !important;
+    font-size: 18px !important;
+  }
 `;
