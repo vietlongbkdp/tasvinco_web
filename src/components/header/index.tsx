@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Dropdown, Tooltip } from 'antd';
 import { Search } from 'components/Form';
-import logo from '../../assets/images/logo.png';
-import english from '../../assets/images/english.png';
-import vietnam from '../../assets/images/vietnam.png';
+import { LOGO, VietnamImage, EnglishImage } from 'assets';
 import {
   TopBar,
   DivTopBar,
@@ -24,20 +22,21 @@ import {
   HeaderVerticalMenuTitle,
   IconDownArrowWhite,
   ImageStyle,
+  MenuStyle,
 } from './styled';
 import { LanguageDropdown } from './feature/language-dropdown';
-import { ProductCategoryMenu } from './feature/product-category-menu';
 import { ContentHeaderNavBottom } from './feature/navi-header/styled';
 import { NaviHeaderData } from './constant';
 import { NaviHeader } from './feature/navi-header';
+import { items } from './feature/product-category-menu';
 
 export const HeaderPage: React.FC = () => {
   const [selectedLanguage, setSelectedLanguage] = useState('Tiếng việt');
-  const [selectedLanguageIcon, setSelectedLanguageIcon] = useState(vietnam);
+  const [selectedLanguageIcon, setSelectedLanguageIcon] = useState(VietnamImage);
 
   const handleLanguageChange = (key: string) => {
     setSelectedLanguage(key);
-    setSelectedLanguageIcon(key === 'Tiếng việt' ? vietnam : english);
+    setSelectedLanguageIcon(key === 'Tiếng việt' ? VietnamImage : EnglishImage);
   };
 
   return (
@@ -58,7 +57,7 @@ export const HeaderPage: React.FC = () => {
         </DivTopBar>
       </TopBar>
       <MastHead>
-        <Logo src={logo} alt="Logo" />
+        <Logo src={LOGO} alt="Logo" />
         <HeaderNav>
           <HeaderContact>
             <IconPhoneCall />
@@ -83,7 +82,7 @@ export const HeaderPage: React.FC = () => {
       </MastHead>
       <WideNav>
         <HeaderBottom>
-          <Dropdown overlay={<ProductCategoryMenu />} placement="bottomLeft">
+          <Dropdown overlay={<MenuStyle items={items} />} placement="bottomLeft">
             <HeaderVerticalMenuTitle>
               <IconMenu />
               <ContentHeaderNavBottom>DANH MỤC SẢN PHẨM</ContentHeaderNavBottom>

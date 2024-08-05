@@ -8,8 +8,8 @@ export const Footer = styled.div`
 export const FooterWidgets = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-left: 319px;
-  margin-right: 319px;
+  width: 80%;
+  margin-inline: auto;
   padding-top: 51px;
   padding-bottom: 51px;
 `;
@@ -127,4 +127,15 @@ export const SendEmail = styled(Send)`
   & path {
     fill: white;
   }
+`;
+
+export const FooterBorderBoottom = styled.div`
+  border-top: 1px solid #414141;
+`;
+
+export const ContentFooterEnd = styled.div`
+  padding-block: 20px;
+  text-align: center;
+  color: #414141;
+  font-size: 12px;
 `;
