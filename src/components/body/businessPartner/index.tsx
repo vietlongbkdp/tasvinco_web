@@ -2,6 +2,7 @@ import { BusinessPartners } from 'components/page/business-partners';
 import { BusunessData } from 'components/page/business-partners/constant';
 import React from 'react';
 import Slider from 'react-slick';
+import { CustomNextArrow, CustomPrevArrow } from 'components/next-prev';
 import { BusinessMain, BusinessMainStyles, TitleContent } from './styled';
 
 export const BusinessPartnersComponent = () => {
@@ -11,6 +12,8 @@ export const BusinessPartnersComponent = () => {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 5,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
   };
   return (
     <BusinessMain>

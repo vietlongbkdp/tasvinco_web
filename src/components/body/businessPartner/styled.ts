@@ -10,6 +10,19 @@ export const BusinessMain = styled.div`
 export const BusinessMainStyles = styled.div`
   width: 80%;
   margin-inline: auto;
+
+  .slick-prev,
+  .slick-next {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 50px;
+    color: #fff;
+  }
 `;
 
 export const TitleContent = styled.div`

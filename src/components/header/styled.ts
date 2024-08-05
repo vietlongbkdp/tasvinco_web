@@ -1,9 +1,31 @@
-import { Cart, DownArrow, Email, MenuIcon, PhoneCall } from 'assets/icon';
 import styled from 'styled-components';
 import { Menu } from 'antd';
+import { Cart, DownArrow, Email, MenuIcon, PhoneCall } from 'assets/icon';
 
 export const TopBar = styled.div`
   background-color: #e7e7e7;
+`;
+export const MastHeadBox = styled.div`
+  width: 100%;
+  z-index: 1000;
+
+  &.scrolled {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+`;
+
+export const MastHead = styled.div`
+  height: 115px;
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 `;
 
 export const DivTopBar = styled.div`
@@ -38,16 +60,6 @@ export const ImageStyle = styled.img`
   margin-right: 8px;
   width: 16px;
   align-items: center;
-`;
-
-export const MastHead = styled.div`
-  height: 115px;
-  width: 80%;
-  margin-inline: auto;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  z-index: 10;
 `;
 
 export const Logo = styled.img`
@@ -113,6 +125,15 @@ export const ContentHeaderNav = styled.p`
 
 export const WideNav = styled.div`
   background-color: #323131;
+  z-index: 1000;
+
+  &.scrolled {
+    position: fixed;
+    top: 115px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
 `;
 
 export const HeaderBottom = styled.div`
