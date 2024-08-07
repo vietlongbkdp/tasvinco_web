@@ -14,6 +14,17 @@ import { ReactComponent as Youtobe } from './svg/youtobe.svg';
 import { ReactComponent as PhoneWhite } from './svg/phone-white.svg';
 import { ReactComponent as Send } from './svg/send.svg';
 import { ReactComponent as Plus } from './svg/plus.svg';
+import { ReactComponent as Users } from './svg/users.svg';
+import { ReactComponent as Company } from './svg/company.svg';
+import { ReactComponent as Hand } from './svg/hand.svg';
+import { ReactComponent as Intersect } from './svg/intersect.svg';
+import { ReactComponent as Mission } from './svg/mission.svg';
+import { ReactComponent as Rewind } from './svg/rewind.svg';
+import { ReactComponent as Creative } from './svg/creative.svg';
+import { ReactComponent as Follow } from './svg/follow.svg';
+import { ReactComponent as Grateful } from './svg/grateful.svg';
+import { ReactComponent as Honest } from './svg/honest.svg';
+import { ReactComponent as Save } from './svg/save.svg';
 
 export {
   PhoneCall,
@@ -32,4 +43,15 @@ export {
   PhoneWhite,
   Send,
   Plus,
+  Users,
+  Company,
+  Hand,
+  Intersect,
+  Mission,
+  Rewind,
+  Creative,
+  Follow,
+  Grateful,
+  Honest,
+  Save,
 };

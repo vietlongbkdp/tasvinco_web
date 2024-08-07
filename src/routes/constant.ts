@@ -1,4 +1,6 @@
-import HomeLayout from 'layouts/HomeLayout/home';
+import { AboutLayout } from 'layouts';
+import HomeLayout from 'layouts/HomeLayout';
+
 import { SignIn } from 'modules/Auth/SignIn/Loadable';
 import { HomePage } from 'modules/HomePage/Loadable';
 
@@ -13,13 +15,19 @@ export const PUBLIC_ROUTES = [
   {
     path: RoutesName.LOGIN,
     component: SignIn,
-    layout: HomeLayout,
+    layout: SignIn,
     exact: true,
   },
   {
     path: RoutesName.HOME,
     component: HomePage,
     layout: HomeLayout,
+    exact: true,
+  },
+  {
+    path: RoutesName.ABOUT,
+    component: HomePage,
+    layout: AboutLayout,
     exact: true,
   },
 ];

@@ -109,7 +109,7 @@ export const HeaderPage: React.FC = () => {
             </HeaderVerticalMenuTitle>
           </Dropdown>
           {NaviHeaderData.length &&
-            NaviHeaderData.map((data) => <NaviHeader content={data.content} key={data.id} id={0} />)}
+            NaviHeaderData.map((data) => <NaviHeader content={data.content} link={data.link} key={data.id} id={0} />)}
         </HeaderBottom>
       </WideNav>
     </div>
