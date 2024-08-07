@@ -15,6 +15,9 @@ import Banner10 from './images/banner-10.jpg';
 import BackgroundImage from './images/background-image.jpg';
 import Logoleft from './images/logoleft.png';
 import Logoright from './images/logoright.png';
+import AboutHeader from './images/aboutHeader.png';
+import PageAbout from './images/page-about.png';
+import ContentPageAbout from './images/content-page-about.jpg';
 
 export {
   LOGO,
@@ -34,4 +37,7 @@ export {
   BackgroundImage,
   Logoleft,
   Logoright,
+  AboutHeader,
+  PageAbout,
+  ContentPageAbout,
 };
