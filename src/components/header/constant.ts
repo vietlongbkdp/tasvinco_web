@@ -4,17 +4,21 @@ export const NaviHeaderData: PropsNaviHeader[] = [
   {
     id: 1,
     content: 'Giới Thiệu',
+    link: '/about',
   },
   {
     id: 2,
     content: 'Đối tác khách hàng',
+    link: '/',
   },
   {
     id: 3,
     content: 'Download',
+    link: '/',
   },
   {
     id: 4,
     content: 'Liên hệ',
+    link: '/',
   },
 ];

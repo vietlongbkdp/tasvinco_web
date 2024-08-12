@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const HeaderVerticalMenu = styled.div`
@@ -13,4 +14,8 @@ export const ContentHeaderNavBottom = styled.p`
   &:hover {
     color: #e74c3c;
   }
+`;
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
 `;
