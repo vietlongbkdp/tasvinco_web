@@ -14,8 +14,6 @@ export const ContentTitle = styled.div`
 `;
 
 export const StyledMainProduct = styled.div`
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
 `;
