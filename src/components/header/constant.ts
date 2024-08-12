@@ -9,7 +9,7 @@ export const NaviHeaderData: PropsNaviHeader[] = [
   {
     id: 2,
     content: 'Đối tác khách hàng',
-    link: '/',
+    link: '/doi-tac-khach-hang',
   },
   {
     id: 3,
@@ -19,6 +19,6 @@ export const NaviHeaderData: PropsNaviHeader[] = [
   {
     id: 4,
     content: 'Liên hệ',
-    link: '/',
+    link: '/contact',
   },
 ];
