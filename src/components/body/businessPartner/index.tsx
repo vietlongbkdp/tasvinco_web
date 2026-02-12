@@ -2,6 +2,8 @@ import { BusinessPartners } from 'components/page/business-partners';
 import { BusunessData } from 'components/page/business-partners/constant';
 import React from 'react';
 import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import { CustomNextArrow, CustomPrevArrow } from 'components/next-prev';
 import { BusinessMain, BusinessMainStyles, TitleContent } from './styled';
 

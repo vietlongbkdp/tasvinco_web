@@ -18,6 +18,8 @@ import Logoright from './images/logoright.png';
 import AboutHeader from './images/aboutHeader.png';
 import PageAbout from './images/page-about.png';
 import ContentPageAbout from './images/content-page-about.jpg';
+import BackgroundContact from './images/background-contact.png';
+import Dailybg from './images/daily-bg-01.png.webp';
 
 export {
   LOGO,
@@ -40,4 +42,6 @@ export {
   AboutHeader,
   PageAbout,
   ContentPageAbout,
+  BackgroundContact,
+  Dailybg,
 };

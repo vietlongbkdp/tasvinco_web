@@ -25,6 +25,7 @@ import { ReactComponent as Follow } from './svg/follow.svg';
 import { ReactComponent as Grateful } from './svg/grateful.svg';
 import { ReactComponent as Honest } from './svg/honest.svg';
 import { ReactComponent as Save } from './svg/save.svg';
+import { ReactComponent as PhoneCalls } from './svg/phoneCall.svg';
 
 export {
   PhoneCall,
@@ -54,4 +55,5 @@ export {
   Grateful,
   Honest,
   Save,
+  PhoneCalls,
 };

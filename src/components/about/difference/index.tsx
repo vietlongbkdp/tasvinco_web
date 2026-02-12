@@ -15,7 +15,7 @@ import {
   ImagesEnd,
 } from './styled';
 
-export const DifferenceComponent = () => {
+export const DifferenceComponent: React.FC = () => {
   return (
     <>
       <DifferenceStyles>
